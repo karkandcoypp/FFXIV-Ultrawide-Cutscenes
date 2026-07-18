@@ -4,7 +4,7 @@
     <AssemblyName>Dalamud.FullscreenCutscenes.Community</AssemblyName>
     <Authors>Carcosa Lyuman</Authors>
     <Company></Company>
-    <Version>1.1.0.1</Version>
+    <Version>1.1.0.2</Version>
     <Description>Removes letterboxing from FFXIV cutscenes on ultrawide displays.</Description>
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/karkandcoypp/FFXIV-Ultrawide-Cutscenes</PackageProjectUrl>
