@@ -21,6 +21,16 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
+      - name: Install Dalamud development files
+        shell: pwsh
+        run: |
+          $dalamudDirectory = Join-Path $env:APPDATA "XIVLauncher\addon\Hooks\dev"
+          Invoke-WebRequest `
+            -Uri "https://goatcorp.github.io/dalamud-distrib/latest.zip" `
+            -OutFile "dalamud-latest.zip"
+          New-Item -ItemType Directory -Path $dalamudDirectory -Force | Out-Null
+          Expand-Archive -Path "dalamud-latest.zip" -DestinationPath $dalamudDirectory -Force
+
       - name: Restore dependencies
         run: dotnet restore Dalamud.FullscreenCutscenes.sln
 
