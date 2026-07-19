@@ -26,6 +26,21 @@ The original plugin is no longer actively maintained. This fork keeps it compati
 
 The custom repository URL will become active once the first release and `pluginmaster.json` have been published.
 
+## Установка на русском
+
+1. Откройте настройки Dalamud командой `/xlsettings`.
+2. Перейдите в раздел **Experimental**.
+3. Добавьте следующий адрес в список **Custom Plugin Repositories**:
+
+   ```text
+   https://raw.githubusercontent.com/karkandcoypp/FFXIV-Ultrawide-Cutscenes/main/pluginmaster.json
+   ```
+
+4. Сохраните настройки и откройте установщик плагинов командой `/xlplugins`.
+5. Найдите **Ultrawide Cutscenes Community** и установите плагин.
+
+Плагин убирает чёрные полосы формата 16:9 из внутриигровых кат-сцен на широкоформатных и сверхшироких мониторах.
+
 ## Commands
 
 | Command | Description |
